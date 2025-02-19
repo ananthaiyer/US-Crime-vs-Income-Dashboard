@@ -1,6 +1,7 @@
 # US Income Vs Crime Dashboard
 
 Run Dashboard: [US_Crime_Income_Analysis](https://us-crime-vs-income-dashboard-erlkabpu9zpzn7lidwgb5k.streamlit.app/)
+
 This Streamlit application provides interactive insights into 'crime' and 'income' trends across six major cities in the US.
 It integrates Snowflake and Kaggle datasets with visual analytics, and is deployed locally through Docker.
 
