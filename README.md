@@ -1,5 +1,6 @@
 # US Income Vs Crime Dashboard
 
+Run Dashboard: [US_Crime_Income_Analysis](https://us-crime-vs-income-dashboard-erlkabpu9zpzn7lidwgb5k.streamlit.app/)
 This Streamlit application provides interactive insights into 'crime' and 'income' trends across six major cities in the US.
 It integrates Snowflake and Kaggle datasets with visual analytics, and is deployed locally through Docker.
 
@@ -16,14 +17,23 @@ It integrates Snowflake and Kaggle datasets with visual analytics, and is deploy
 
 ## Project Structure
 Streamlit/
+
 │── Key_Insights.py
+
 │── pages/
+
 │   ├── 1_Crime.py
+
 │   ├── 2_Income.py
+
 │   ├── 3_Heatmaps.py
+
 │── Dockerfile
+
 │── requirements.txt
+
 │── run_app.sh
+
 │── README.md
 
 ## Project Setup
@@ -73,11 +83,16 @@ Add the following lines into the secrets file:
 - user = "User_Name"
 - password = "Password"
 - account = "Account_Name"
-- warehouse = "US_STATS"
-- database = "US_INCOME"
+- warehouse = "Warehouse"
+- database = "Database"
 - schema = "PUBLIC"
 
 Click Escape -> type ':wq!'
+
+3.1 Store credentials securely
+- Use **Streamlit Secrets Management** instead of storing `secrets.toml` locally.
+- If using a local `secrets.toml`, add `.streamlit/secrets.toml` to your `.gitignore` file.
+
 
 4. Create .py files into the folder. To add more pages, create a separate folder as 'pages' and add .py files into the pages.
 5. Run Streamlit app locally
